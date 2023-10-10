@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trilha de CSS</title>
+    <style>
+        div {
+            width: 200px;
+            height: 300px;
+            border: 5px solid blue;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+
+        #contain {
+            object-fit: contain;
+        }
+
+        #cover {
+            object-fit: cover;
+        }
+
+        #none {
+            object-fit: none;
+        }
+
+        #scale-down {
+            object-fit: scale-down;
+        }
+    </style>
+</head>
+<body>
+    <h1>Propriedade <code>object-fit</code></h1>
+
+    <code>object-fit: fill;</code> (padrão) O conteúdo substituído é dimensionado para preencher a caixa de conteúdo do elemento: o tamanho concreto do objeto é a largura e a altura usadas do elemento.
+    <div>
+        <img src="https://d1fdloi71mui9q.cloudfront.net/yL9O0oLsQoqoRXR5tUEV_ixjoRCv2RNqoYutL" alt="" id="fill">
+    </div>
+
+    <br>
+
+    <code>object-fit: contain;</code> O conteúdo substituído é dimensionado para manter sua proporção enquanto se encaixa na caixa de conteúdo do elemento: seu tamanho de objeto concreto é resolvido como uma restrição de restrição em relação à largura e altura usadas do elemento.
+    <div>
+        <img src="https://d1fdloi71mui9q.cloudfront.net/yL9O0oLsQoqoRXR5tUEV_ixjoRCv2RNqoYutL" alt="" id="contain">
+    </div>
+
+    <br>
+
+    <code>object-fit: cover;</code> O conteúdo substituído é dimensionado para manter sua proporção e preencher toda a caixa de conteúdo do elemento: seu tamanho de objeto concreto é resolvido como uma restrição de capa contra a largura e a altura usadas do elemento.
+
+    <div>
+        <img src="https://d1fdloi71mui9q.cloudfront.net/yL9O0oLsQoqoRXR5tUEV_ixjoRCv2RNqoYutL" alt="" id="cover">
+    </div>
+
+    <br>
+
+    <code>object-fit: none;</code> O conteúdo substituído não é redimensionado para caber dentro da caixa de conteúdo do elemento: o tamanho do objeto concreto do objeto é determinado usando o algoritmo de tamanho padrão sem tamanho especificado e um tamanho de objeto padrão igual à largura e altura usadas do elemento substituído.
+
+    <div>
+        <img src="https://d1fdloi71mui9q.cloudfront.net/yL9O0oLsQoqoRXR5tUEV_ixjoRCv2RNqoYutL" alt="" id="none">
+    </div>
+
+    <br>
+
+    <code>object-fit: scale-down;</code> O conteúdo é dimensionado se none ou contain for especificado, o que resultaria em um tamanho menor de objeto concreto.
+
+    <div>
+        <img src="https://d1fdloi71mui9q.cloudfront.net/yL9O0oLsQoqoRXR5tUEV_ixjoRCv2RNqoYutL" alt="" id="scale-down">
+    </div>
+</body>
+</body>
+</html>
