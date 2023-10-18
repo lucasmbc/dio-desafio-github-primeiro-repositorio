@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trilha de CSS</title>
+    <style>
+        #example1 {
+            border: 10px dotted black;
+            padding: 15px;
+            background: lightblue;
+            background-clip: border-box;
+        }
+
+        #example2 {
+            border: 10px dotted black;
+            padding: 15px;
+            background: lightblue;
+            background-clip: padding-box;
+        }
+
+        #example3 {
+            border: 10px dotted black;
+            padding: 15px;
+            background: lightblue;
+            background-clip: content-box;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Propriedade background-clip</h1>
+
+    <p>A propriedade background-clip define até que ponto o fundo deve se estender dentro de um elemento.</p>
+
+    <p>background-clip: border-box (padrão):</p>
+    <div id="example1">
+        <p>O fundo se estende além da borda.</p>
+    </div>
+
+    <p>background-clip: padding-box:</p>
+    <div id="example2">
+        <p>O background se estende até a borda interna.</p>
+    </div>
+
+    <p>background-clip: content-box:</p>
+    <div id="example3">
+        <p>O background se estende até a borda da caixa de conteúdo.</p>
+    </div>
+
+</body>
+
+</html>
